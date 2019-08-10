@@ -13,6 +13,22 @@ apt-get install -y tree
 
 apt-get install -y wget
 
-# install go
+## zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+## zsh config
+plugins=(
+  git
+  z
+  wd
+  zsh-autosuggestions
+  docker
+  docker-compose
+)
+
+## zsh install zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+## 持续增加中...
 ```
 
